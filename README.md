@@ -39,7 +39,7 @@ wget -qO- https://multiarm.cs.columbia.edu/downloads/data/benchmark.tar.xz | tar
 ```
 Then evaluate the pretrained weights on the benchmark in static mode with
 ```sh
-python main.py --mode benchmark --tasks_path benchmark/ --load ours/ours.pth --num_processes 1 --gui
+python main.py --mode benchmark --load ours/ours.pth --num_processes 1 --gui
 ```
 You can remove `--gui` to run headless, and use more CPU cores with `--num_processes 16`.
 
